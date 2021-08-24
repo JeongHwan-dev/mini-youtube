@@ -230,7 +230,7 @@ header .icons .fa-search {
 
   /* Up Next Section */
   .upNext {
-    padding: var(--spacing);
     flex-basis: 35%;
+    padding: var(--spacing);
   }
 }
