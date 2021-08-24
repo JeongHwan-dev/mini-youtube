@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube</title>
     <!-- 브라우저 기본 CSS 스타일 초기화 -->
     <link
       rel="stylesheet"
@@ -15,7 +16,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>YouTube</title>
     <!-- Font Awesome 사용 -->
     <script
       src="https://kit.fontawesome.com/245aa0a31a.js"
@@ -34,11 +34,13 @@
         <i class="fas fa-ellipsis-v"></i>
       </div>
     </header>
+    <!-- //Header -->
 
     <!-- Video Player Section -->
     <section class="player">
       <video controls src="./videos/elice-coding.mp4"></video>
     </section>
+    <!-- //Video Player Section -->
 
     <!-- Video Info Section-->
     <section class="info">
@@ -51,35 +53,43 @@
         </ul>
         <div class="titleAndButton">
           <span class="title"> 엘리스코딩을 소개합니다! </span>
-          <button class="moreBtn">
+          <button type="button" class="moreBtn">
             <i class="fas fa-caret-down"></i>
           </button>
         </div>
         <span class="views">1M views 1 month ago</span>
       </div>
+      <!-- //Metadata -->
 
       <!-- Actions -->
       <ul class="actions">
         <li>
-          <button>
+          <button type="button">
             <i class="active fas fa-thumbs-up"></i><span>1K</span>
           </button>
         </li>
         <li>
-          <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
+          <button type="button">
+            <i class="fas fa-thumbs-down"></i><span>0</span>
+          </button>
         </li>
         <li>
-          <button><i class="fas fa-share"></i><span>Share</span></button>
+          <button type="button">
+            <i class="fas fa-share"></i><span>Share</span>
+          </button>
         </li>
         <li>
-          <button><i class="fas fa-plus"></i><span>Save</span></button>
+          <button type="button">
+            <i class="fas fa-plus"></i><span>Save</span>
+          </button>
         </li>
         <li>
-          <button>
+          <button type="button">
             <i class="fab fa-font-awesome-flag"></i><span>Report</span>
           </button>
         </li>
       </ul>
+      <!-- //Actions -->
 
       <!-- Channel Description -->
       <div class="channel">
@@ -90,9 +100,11 @@
             <span class="subscribers">1M subscribers</span>
           </div>
         </div>
-        <button class="subscribe">subscribe</button>
+        <button type="button" class="subscribe">subscribe</button>
       </div>
     </section>
+    <!-- //Channel Description -->
+    <!-- //Video Info Section-->
 
     <!-- Up Next section -->
     <section class="upNext">
@@ -107,7 +119,7 @@
             <span class="name">엘리스코딩 elice</span>
             <span class="views">82k views</span>
           </div>
-          <button class="moreBtn">
+          <button type="button" class="moreBtn">
             <i class="fas fa-ellipsis-v"></i>
           </button>
         </li>
@@ -120,7 +132,7 @@
             <span class="name">엘리스코딩 elice</span>
             <span class="views">74k views</span>
           </div>
-          <button class="moreBtn">
+          <button type="button" class="moreBtn">
             <i class="fas fa-ellipsis-v"></i>
           </button>
         </li>
@@ -133,11 +145,12 @@
             <span class="name">엘리스코딩 elice</span>
             <span class="views">80k views</span>
           </div>
-          <button class="moreBtn">
+          <button type="button" class="moreBtn">
             <i class="fas fa-ellipsis-v"></i>
           </button>
         </li>
       </ul>
     </section>
+    <!-- //Up Next section -->
   </body>
 </html>
