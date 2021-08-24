@@ -95,7 +95,7 @@ header .icons .fa-search {
   margin-right: var(--spacing);
   font-size: var(--font-medium);
 }
-.info .metadata .titleAndButton .title {
+.info .metadata .titleAndButton .title.clamp {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   display: -webkit-box;
