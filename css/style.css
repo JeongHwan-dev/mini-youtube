@@ -8,20 +8,24 @@
   --grey-light-color: #e0e0e0;
 
   /* Size */
+  --spacing-large: 16px;
+  --spacing: 12px;
+  --spacing-small: 6px;
   --padding: 12px;
   --avatar-size: 36px;
 
   /* Font Size */
-  --font-large: 18px;
+  --font-large: 20px;
+  --font-regular: 16px;
   --font-medium: 14px;
   --font-small: 12px;
   --font-micro: 10px;
 }
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -40,7 +44,7 @@ button:focus {
 header {
   display: flex;
   justify-content: space-between;
-  padding: var(--padding);
+  padding: var(--spacing);
   background-color: var(--black-color);
   color: var(--white-color);
 }
@@ -67,17 +71,19 @@ header .icons .fa-search {
   max-width: 1000px;
 }
 
-/* Info Section */
-.info {
-  padding: var(--padding);
+/* Info and Up Next */
+.infoAndUpNext .info {
+  padding: var(--spacing);
 }
+
+/* Info Section */
 .info .metadata .hashtags {
   display: flex;
   font-size: var(--font-small);
   color: var(--blue-color);
 }
 .info .metadata .hashtags li {
-  margin-right: var(--padding);
+  margin-right: var(--spacing);
 }
 .info .metadata .hashtags li:last-child {
   margin-right: 0;
@@ -86,17 +92,23 @@ header .icons .fa-search {
   display: flex;
 }
 .info .metadata .titleAndButton .title {
-  display: -webkit-box;
+  margin-right: var(--spacing);
+  font-size: var(--font-medium);
+}
+.info .metadata .titleAndButton .title {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+  display: -webkit-box;
   overflow: hidden;
-  margin-right: var(--padding);
-  font-size: var(--font-medium);
 }
 .info .metadata .titleAndButton .moreBtn {
   height: 100%;
+  transition: transform 300ms ease-in-out;
 }
-.info .views {
+.info .metadata .titleAndButton .moreBtn.clicked {
+  transform: rotate(180deg);
+}
+.info .metadata .views {
   font-size: var(--font-small);
   color: var(--grey-dark-color);
 }
@@ -105,7 +117,7 @@ header .icons .fa-search {
 .info .actions {
   display: flex;
   justify-content: space-around;
-  margin: var(--padding) 0;
+  margin: var(--spacing-large) 0;
 }
 .info .actions button {
   display: flex;
@@ -115,11 +127,14 @@ header .icons .fa-search {
 }
 .info .actions button i {
   margin: 0 auto;
-  margin-bottom: calc(var(--padding) / 2);
-  font-size: 16px;
+  margin-bottom: var(--spacing-small);
+  font-size: var(--font-regular);
 }
 .info .actions button i.active {
   color: var(--blue-color);
+}
+.info .actions button span {
+  width: 100%;
 }
 
 /* Channel Description */
@@ -132,15 +147,17 @@ header .icons .fa-search {
 .info .channel .metadata {
   display: flex;
   align-items: center;
-}
-.info .channel .metadata .info {
-  display: flex;
-  flex-direction: column;
+  padding: var(--spacing-small) 0;
 }
 .info .channel .metadata img {
   width: var(--avatar-size);
   height: var(--avatar-size);
   border-radius: 50%;
+  margin-right: var(--spacing);
+}
+.info .channel .metadata .info {
+  display: flex;
+  flex-direction: column;
 }
 .info .channel .metadata .info .name {
   font-size: var(--font-medium);
@@ -151,6 +168,69 @@ header .icons .fa-search {
 }
 .info .channel .subscribe {
   font-size: var(--font-medium);
-  text-transform: uppercase;
   color: var(--red-color);
+  text-transform: uppercase;
+}
+
+/* Up Next section */
+.upNext {
+  padding: 0 var(--spacing);
+}
+.upNext > .title {
+  margin-bottom: var(--spacing-small);
+  font-style: var(--font-medium);
+  color: var(--grey-dark-color);
+}
+.upNext .item {
+  display: flex;
+  margin-top: var(--spacing);
+}
+.upNext .item .img {
+  flex-basis: 35%;
+  margin-right: var(--spacing);
+}
+.upNext .item .img img {
+  width: 100%;
+}
+.upNext .item .itemInfo {
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.upNext .item .moreBtn {
+  flex-basis: 5%;
+  height: 100%;
+}
+.upNext .item .info .title {
+  font-size: var(--font-small);
+}
+.upNext .item .info .name,
+.upNext .item .info .views {
+  font-size: var(--font-micro);
+  color: var(--grey-dark-color);
+}
+
+.infoAndUpNext {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Media */
+@media screen and (min-width: 768px) {
+  /* Info and Up Next */
+  .infoAndUpNext {
+    flex-direction: row;
+    margin: var(--padding) 0;
+  }
+
+  /* Info Section */
+  .info {
+    flex-basis: 65%;
+  }
+
+  /* Up Next Section */
+  .upNext {
+    padding: var(--spacing);
+    flex-basis: 35%;
+  }
 }
