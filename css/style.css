@@ -1,6 +1,7 @@
 :root {
   /* Color */
-  --black-color: #202020;
+  --black-color: #000;
+  --black-light-color: #202020;
   --white-color: #fff;
   --blue-color: #045fd4;
   --red-color: #ff0000;
@@ -45,7 +46,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: var(--spacing-large) 18px;
-  background-color: var(--black-color);
+  background-color: var(--black-light-color);
   color: var(--white-color);
 }
 header .logo {
