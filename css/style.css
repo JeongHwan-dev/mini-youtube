@@ -10,8 +10,8 @@
   /* Size */
   --spacing-large: 16px;
   --spacing: 12px;
+  --spacing-medium: 8px;
   --spacing-small: 6px;
-  --padding: 12px;
   --avatar-size: 36px;
 
   /* Font Size */
@@ -44,18 +44,25 @@ button:focus {
 header {
   display: flex;
   justify-content: space-between;
-  padding: var(--spacing);
+  padding: var(--spacing-large) 18px;
   background-color: var(--black-color);
   color: var(--white-color);
 }
 header .logo {
   font-size: var(--font-large);
 }
-header .logo i {
+header .logo .fa-bars {
+  margin-right: var(--spacing-medium);
+  color: var(--white-color);
+}
+header .logo .fa-youtube {
   color: var(--red-color);
 }
+header .logo span {
+  font-weight: 600;
+}
 header .icons .fa-search {
-  margin-right: var(--padding);
+  margin-right: var(--spacing-large);
 }
 
 /* Video Player Section */
@@ -220,7 +227,7 @@ header .icons .fa-search {
   /* Info and Up Next */
   .infoAndUpNext {
     flex-direction: row;
-    margin: var(--padding) 0;
+    margin: var(--spacing) 0;
   }
 
   /* Info Section */
