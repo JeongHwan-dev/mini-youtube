@@ -53,14 +53,17 @@ header .logo {
   font-size: var(--font-large);
 }
 header .logo .fa-bars {
-  margin-right: var(--spacing-medium);
+  margin-right: var(--spacing-large);
   color: var(--white-color);
 }
-header .logo .fa-youtube {
-  color: var(--red-color);
-}
-header .logo span {
+header .logo .title {
   font-weight: 600;
+  color: var(--white-color);
+  text-decoration: none;
+  outline: none;
+}
+header .logo .title .fa-youtube {
+  color: var(--red-color);
 }
 header .icons .fa-search {
   margin-right: var(--spacing-large);
