@@ -45,7 +45,7 @@ button:focus {
 header {
   display: flex;
   justify-content: space-between;
-  padding: var(--spacing-large) 18px;
+  padding: 18px 20px;
   background-color: var(--black-light-color);
   color: var(--white-color);
 }
