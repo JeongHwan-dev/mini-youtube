@@ -2,7 +2,7 @@
   <br />
   <img src="./img/youtube_logo.png" alt="YouTube" height="200px" />
   <br />
-  <h1>미니 유튜브 (Mini YouTube)</h1>
+  <h1>유튜브 (YouTube) with HTML&CSS</h1>
   <br />
 </div>
 
@@ -19,7 +19,9 @@
 
 ## 💁🏻‍♂ 웹 서비스 소개
 
-스타벅스 코리아 웹 사이트를 **클론 코딩**한 웹 사이트입니다.
+**유튜브(YouTube)** 서비스의 마크업과 스타일링만 `HTML&CSS, Vanilla JS`를 통해 클론 코딩한 웹 서비스입니다.
+
+> 반응형 웹이 적용되어 있습니다.
 
 <br />
 
@@ -61,7 +63,7 @@
 1. **원격 저장소 복제**
 
 ```bash
-$ git clone https://github.com/JeongHwan-dev/mini-youtube.git
+$ git clone https://github.com/JeongHwan-dev/youtube-with-html-css.git
 ```
 
 2. **프로젝트 폴더로 이동**
