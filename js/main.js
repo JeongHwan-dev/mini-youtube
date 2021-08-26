@@ -1,3 +1,6 @@
+// Strict mode 설정
+'use strict';
+
 const moreBtn = document.querySelector('.info .metadata .moreBtn');
 const title = document.querySelector('.info .metadata .title');
 
