@@ -4,7 +4,7 @@
   --black-light-color: #202020;
   --white-color: #fff;
   --blue-color: #045fd4;
-  --red-color: #ff0000;
+  --red-color: #cc0000;
   --grey-dark-color: #909090;
   --grey-light-color: #e0e0e0;
 
@@ -170,13 +170,13 @@ header .icons .fa-search {
 .info .channel {
   display: flex;
   justify-content: space-between;
+  padding: var(--spacing) 0;
   border-top: 1px solid var(--grey-light-color);
   border-bottom: 1px solid var(--grey-light-color);
 }
 .info .channel .metadata {
   display: flex;
   align-items: center;
-  padding: var(--spacing-small) 0;
 }
 .info .channel .metadata img {
   width: var(--avatar-size);
@@ -184,21 +184,25 @@ header .icons .fa-search {
   border-radius: 50%;
   margin-right: var(--spacing);
 }
-.info .channel .metadata .info {
+.info .channel .metadata .channel__info {
   display: flex;
   flex-direction: column;
+  line-height: 1.5;
 }
-.info .channel .metadata .info .name {
+.info .channel .metadata .channel__info .name {
+  width: 100%;
   font-size: var(--font-medium);
 }
-.info .channel .metadata .info .subscribers {
+.info .channel .metadata .channel__info .subscribers {
   font-size: var(--font-small);
   color: var(--grey-dark-color);
 }
 .info .channel .subscribe {
+  margin: 0 4px;
+  padding: 10px 22px;
+  background-color: var(--red-color);
   font-size: var(--font-medium);
-  color: var(--red-color);
-  text-transform: uppercase;
+  color: var(--white-color);
 }
 
 /* Up Next section */
