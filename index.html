@@ -5,6 +5,182 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube</title>
+
+    <!-- 브라우저 기본 CSS 스타일 초기화 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+
+    <!-- Google Fonts 사용 -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+    />
+
+    <!-- favicon 적용 -->
+    <link rel="icon" href="./favicon.png" />
+
+    <!-- CSS 파일 적용 -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Font Awesome 사용 -->
+    <script
+      src="https://kit.fontawesome.com/245aa0a31a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JS 파일 적용 -->
+    <script src="./js/main.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <i class="fas fa-bars"></i>
+        <a href="/" class="title">
+          <i class="fab fa-youtube"></i>
+          <span>Youtube</span>
+        </a>
+      </div>
+      <div class="icons">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-ellipsis-v"></i>
+      </div>
+    </header>
+    <!-- //Header -->
+
+    <!-- Video Player Section -->
+    <section class="player">
+      <video autoplay controls muted>
+        <source src="./video/elice-coding.mp4" type="video/mp4" />
+      </video>
+    </section>
+    <!-- //Video Player Section -->
+
+    <!-- Info and Up Next -->
+    <div class="infoAndUpNext">
+      <!-- Info Section-->
+      <section class="info">
+        <!-- Metadata -->
+        <div class="metadata">
+          <ul class="hashtags">
+            <li>#elice</li>
+            <li>#coding</li>
+            <li>#developer</li>
+          </ul>
+          <div class="titleAndButton">
+            <span class="title clamp">엘리스코딩을 소개합니다!</span>
+            <button type="button" class="moreBtn">
+              <i class="fas fa-caret-down"></i>
+            </button>
+          </div>
+          <div class="video-data">
+            <span class="views">조회수 2,391회</span>
+            <span class="dot">&#183;</span>
+            <span class="date">2019. 6. 24.</span>
+          </div>
+        </div>
+        <!-- //Metadata -->
+
+        <!-- Actions -->
+        <ul class="actions">
+          <li>
+            <button type="button">
+              <i class="active fas fa-thumbs-up"></i><span>1K</span>
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <i class="fas fa-thumbs-down"></i><span>0</span>
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <i class="fas fa-share"></i><span>Share</span>
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <i class="fas fa-plus"></i><span>Save</span>
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <i class="fab fa-font-awesome-flag"></i><span>Report</span>
+            </button>
+          </li>
+        </ul>
+        <!-- //Actions -->
+
+        <!-- Channel Description -->
+        <div class="channel">
+          <div class="metadata">
+            <img src="./img/elice_logo.jpg" alt="elice" />
+            <div class="channel__info">
+              <span class="name">엘리스코딩 elice</span>
+              <span class="subscribers">구독자 1.98천명</span>
+            </div>
+          </div>
+          <button type="button" class="subscribe">구독</button>
+        </div>
+      </section>
+      <!-- //Channel Description -->
+      <!-- //Info Section-->
+
+      <!-- Up Next section -->
+      <section class="upNext">
+        <span class="title">Up next</span>
+        <ul>
+          <li class="item">
+            <div class="img">
+              <img src="./img/thumbnail1.jpg" alt="첫 번째 이야기" />
+            </div>
+            <div class="itemInfo">
+              <span class="title"
+                >코딩 부트캠프, 엘리스를 선택한 이유는? 첫 번째 이야기!</span
+              >
+              <span class="name">엘리스코딩 elice</span>
+              <span class="views">82k views</span>
+            </div>
+            <button type="button" class="moreBtn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </li>
+          <li class="item">
+            <div class="img">
+              <img src="./img/thumbnail2.jpg" alt="두 번째 이야기" />
+            </div>
+            <div class="itemInfo">
+              <span class="title"
+                >코딩 부트캠프, 엘리스를 선택한 이유는? 두 번째 이야기!</span
+              >
+              <span class="name">엘리스코딩 elice</span>
+              <span class="views">74k views</span>
+            </div>
+            <button type="button" class="moreBtn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </li>
+          <li class="item">
+            <div class="img">
+              <img src="./img/thumbnail3.jpg" alt="세 번째 이야기" />
+            </div>
+            <div class="itemInfo">
+              <span class="title"
+                >코딩 부트캠프, 엘리스를 선택한 이유는? 세 번째 이야기!</span
+              >
+              <span class="name">엘리스코딩 elice</span>
+              <span class="views">80k views</span>
+            </div>
+            <button type="button" class="moreBtn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </li>
+        </ul>
+      </section>
+      <!-- //Up Next section -->
+    </div>
+    <!-- //Info and Up Next -->
+  </body>
 </html>
