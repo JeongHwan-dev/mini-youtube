@@ -15,6 +15,7 @@
   --spacing: 12px;
   --spacing-medium: 8px;
   --spacing-small: 6px;
+  --spacing-micro: 4px;
   --avatar-size: 36px;
 
   /* Font Size */
@@ -132,16 +133,16 @@ header .icons .fa-search {
 .info .metadata .titleAndButton .moreBtn.clicked {
   transform: rotate(180deg);
 }
-.info .metadata .video-data {
+.info .metadata .item__data {
   padding: var(--spacing-small) 0;
 }
-.info .metadata .video-data .views,
-.info .metadata .video-data .dot,
-.info .metadata .video-data .date {
+.info .metadata .item__data .views,
+.info .metadata .item__data .dot,
+.info .metadata .item__data .date {
   font-size: var(--font-medium);
   color: var(--grey-color);
 }
-.info .metadata .dot {
+.info .metadata .item__data .dot {
   font-weight: 700;
 }
 
@@ -171,6 +172,7 @@ header .icons .fa-search {
 
 /* Channel Description */
 .info .channel {
+  margin-bottom: var(--spacing-large);
   padding: var(--spacing) 0;
   border-top: 1px solid var(--grey-light-color);
   border-bottom: 1px solid var(--grey-light-color);
@@ -238,11 +240,6 @@ header .icons .fa-search {
 .upNext {
   padding: 0 var(--spacing);
 }
-.upNext > .title {
-  margin-bottom: var(--spacing-small);
-  font-style: var(--font-medium);
-  color: var(--grey-color);
-}
 .upNext .item {
   display: flex;
   margin-top: var(--spacing);
@@ -254,22 +251,28 @@ header .icons .fa-search {
 .upNext .item .img img {
   width: 100%;
 }
-.upNext .item .itemInfo {
-  flex-basis: 60%;
+.upNext .item .item__info {
   display: flex;
   flex-direction: column;
+  flex-basis: 60%;
+  line-height: 1.5;
+}
+.upNext .item .item__info .title {
+  margin-bottom: var(--spacing-micro);
+  font-size: var(--font-medium);
+  color: var(--black-deep-color);
+}
+.upNext .item .item__info .name,
+.upNext .item .item__info .item__data {
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+.upNext .item .item__info .item__data .dot {
+  font-weight: 700;
 }
 .upNext .item .moreBtn {
   flex-basis: 5%;
   height: 100%;
-}
-.upNext .item .info .title {
-  font-size: var(--font-small);
-}
-.upNext .item .info .name,
-.upNext .item .info .views {
-  font-size: var(--font-micro);
-  color: var(--grey-color);
 }
 
 /* Media */
