@@ -19,8 +19,6 @@ const alarmOffBtn = document.getElementById('alarm-off');
 subscribeBtn.addEventListener('click', () => {
   subscribeBtn.classList.toggle('clicked');
   alarmBtns.classList.toggle('hidden');
-  alarmOnBtn.classList.toggle('hidden');
-  alarmOffBtn.classList.toggle('hidden');
 
   const isClicked = subscribeBtn.classList.contains('clicked');
 
