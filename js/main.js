@@ -11,12 +11,16 @@ moreBtn.addEventListener('click', () => {
 });
 
 const subscribeBtn = document.getElementById('subscribe');
-const alarmBtn = document.getElementById('alarm');
+const alarmBtns = document.getElementsByClassName('alarm-btns')[0];
+const alarmOnBtn = document.getElementById('alarm-on');
+const alarmOffBtn = document.getElementById('alarm-off');
 
 // 구독 버튼 클릭 시
 subscribeBtn.addEventListener('click', () => {
   subscribeBtn.classList.toggle('clicked');
-  alarmBtn.classList.toggle('hidden');
+  alarmBtns.classList.toggle('hidden');
+  alarmOnBtn.classList.toggle('hidden');
+  alarmOffBtn.classList.toggle('hidden');
 
   const isClicked = subscribeBtn.classList.contains('clicked');
 
@@ -25,4 +29,14 @@ subscribeBtn.addEventListener('click', () => {
   } else {
     subscribeBtn.innerText = '구독';
   }
+});
+
+alarmOnBtn.addEventListener('click', () => {
+  alarmOnBtn.classList.toggle('hidden');
+  alarmOffBtn.classList.toggle('hidden');
+});
+
+alarmOffBtn.addEventListener('click', () => {
+  alarmOnBtn.classList.toggle('hidden');
+  alarmOffBtn.classList.toggle('hidden');
 });

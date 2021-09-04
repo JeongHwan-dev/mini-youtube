@@ -220,11 +220,17 @@ header .icons .fa-search {
   background-color: rgba(0, 0, 0, 0.05);
   color: var(--grey-dark-color);
 }
-.info .channel .channel__data .subscribe-btns .alarm {
+.info .channel .channel__data .subscribe-btns .alarm-btns {
+  margin: auto 0;
+}
+.info .channel .channel__data .subscribe-btns .alarm-btns.hidden {
+  display: none;
+}
+.info .channel .channel__data .subscribe-btns .alarm-btns .alarm {
   padding: 0 var(--spacing-medium);
   font-size: 24px;
 }
-.info .channel .channel__data .subscribe-btns .alarm.hidden {
+.info .channel .channel__data .subscribe-btns .alarm-btns .alarm.hidden {
   display: none;
 }
 .info .channel .channel__desc {

@@ -127,9 +127,14 @@
               <button type="button" id="subscribe" class="subscribe">
                 구독
               </button>
-              <button type="button" id="alarm" class="alarm hidden">
-                <i class="far fa-bell"></i>
-              </button>
+              <div class="alarm-btns hidden">
+                <button type="button" id="alarm-on" class="alarm">
+                  <i class="alerm-btn far fa-bell"></i>
+                </button>
+                <button type="button" id="alarm-off" class="alarm hidden">
+                  <i class="alerm-btn far fa-bell-slash"></i>
+                </button>
+              </div>
             </div>
           </div>
           <div class="channel__desc">
@@ -184,7 +189,6 @@
               <i class="fas fa-ellipsis-v"></i>
             </button>
           </li>
-
           <li class="item">
             <div class="img">
               <img src="./img/thumbnail1.jpg" alt="첫 번째 이야기" />
