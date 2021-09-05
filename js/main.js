@@ -38,3 +38,43 @@ alarmOffBtn.addEventListener('click', () => {
   alarmOnBtn.classList.toggle('hidden');
   alarmOffBtn.classList.toggle('hidden');
 });
+
+const likeBtn = document.getElementById('like-btn');
+const likeIcon = document.querySelector('.info .actions #like-btn i');
+const likeCntEl = document.querySelector('.info .actions #like-btn span');
+let likeCnt = 10;
+
+likeCntEl.innerText = likeCnt;
+
+// 좋아요 버튼 클릭 시
+likeBtn.addEventListener('click', () => {
+  likeIcon.classList.toggle('active');
+
+  if (likeIcon.classList.contains('active')) {
+    likeCnt++;
+  } else {
+    likeCnt === 0 ? 0 : likeCnt--;
+  }
+
+  likeCntEl.innerText = likeCnt;
+});
+
+const dislikeBtn = document.getElementById('dislike-btn');
+const dislikeIcon = document.querySelector('.info .actions #dislike-btn i');
+const dislikeCntEl = document.querySelector('.info .actions #dislike-btn span');
+let dislikeCnt = 0;
+
+dislikeCntEl.innerText = dislikeCnt;
+
+// 싫어요 버튼 클릭 시
+dislikeBtn.addEventListener('click', () => {
+  dislikeIcon.classList.toggle('active');
+
+  if (dislikeIcon.classList.contains('active')) {
+    dislikeCnt++;
+  } else {
+    dislikeCnt === 0 ? 0 : dislikeCnt--;
+  }
+
+  dislikeCntEl.innerText = dislikeCnt;
+});
