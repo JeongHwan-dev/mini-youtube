@@ -78,3 +78,61 @@ dislikeBtn.addEventListener('click', () => {
 
   dislikeCntEl.innerText = dislikeCnt;
 });
+
+const contentsData = [
+  {
+    title: '코딩 부트캠프, 엘리스를 선택한 이유는? 첫 번째 이야기!',
+    img: './img/thumbnail1.jpg',
+    name: '엘리스코딩 elice',
+    views: '10,376',
+    date: '2019. 7. 15.',
+  },
+  {
+    title: '코딩 부트캠프, 엘리스를 선택한 이유는? 두 번째 이야기!',
+    img: './img/thumbnail2.jpg',
+    name: '엘리스코딩 elice',
+    views: '3,419',
+    date: '2019. 7. 15.',
+  },
+  {
+    title: '코딩 부트캠프, 엘리스를 선택한 이유는? 세 번째 이야기!',
+    img: './img/thumbnail3.jpg',
+    name: '엘리스코딩 elice',
+    views: '3,419',
+    date: '2019. 7. 16.',
+  },
+];
+
+// 다음 영상 리스트 섹션
+const upNextSec = document.querySelector('.infoAndUpNext .upNext');
+const contentsList = [];
+
+contentsList.push('<ul>');
+
+for (let i = contentsData.length - 1; i >= 0; i--) {
+  contentsList.push(`
+    <li class="item">
+      <div class="img">
+        <img src="${contentsData[i].img}" alt="${contentsData[i].title}" />
+      </div>
+      <div class="item__info">
+        <span class="title">
+          ${contentsData[i].title}
+        </span>
+        <span class="name">${contentsData[i].name}</span>
+        <div class="item__data">
+          <span class="views">조회수 ${contentsData[i].views}회</span>
+          <span class="dot">&#183;</span>
+          <span class="date">${contentsData[i].date}</span>
+        </div>
+      </div>
+      <button type="button" class="moreBtn">
+        <i class="fas fa-ellipsis-v"></i>
+      </button>
+    </li>
+  `);
+}
+
+contentsList.push('</ul>');
+
+upNextSec.innerHTML = contentsList.join('');
