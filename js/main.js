@@ -79,6 +79,7 @@ dislikeBtn.addEventListener('click', () => {
   dislikeCntEl.innerText = dislikeCnt;
 });
 
+// 다음 영상 데이터
 const contentsData = [
   {
     title: '코딩 부트캠프, 엘리스를 선택한 이유는? 첫 번째 이야기!',
