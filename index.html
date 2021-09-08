@@ -75,7 +75,7 @@
               <i class="fas fa-caret-down"></i>
             </button>
           </div>
-          <div class="video-data">
+          <div class="item__data">
             <span class="views">조회수 2,391회</span>
             <span class="dot">&#183;</span>
             <span class="date">2019. 6. 24.</span>
@@ -86,28 +86,28 @@
         <!-- Actions -->
         <ul class="actions">
           <li>
-            <button type="button">
-              <i class="active fas fa-thumbs-up"></i><span>1K</span>
+            <button type="button" id="like-btn">
+              <i class="fas fa-thumbs-up"></i><span></span>
+            </button>
+          </li>
+          <li>
+            <button type="button" id="dislike-btn">
+              <i class="fas fa-thumbs-down"></i><span></span>
             </button>
           </li>
           <li>
             <button type="button">
-              <i class="fas fa-thumbs-down"></i><span>0</span>
+              <i class="fas fa-share"></i><span>공유</span>
             </button>
           </li>
           <li>
             <button type="button">
-              <i class="fas fa-share"></i><span>Share</span>
+              <i class="fas fa-plus"></i><span>저장</span>
             </button>
           </li>
           <li>
             <button type="button">
-              <i class="fas fa-plus"></i><span>Save</span>
-            </button>
-          </li>
-          <li>
-            <button type="button">
-              <i class="fab fa-font-awesome-flag"></i><span>Report</span>
+              <i class="fab fa-font-awesome-flag"></i><span>신고</span>
             </button>
           </li>
         </ul>
@@ -115,14 +115,34 @@
 
         <!-- Channel Description -->
         <div class="channel">
-          <div class="metadata">
-            <img src="./img/elice_logo.jpg" alt="elice" />
-            <div class="channel__info">
-              <span class="name">엘리스코딩 elice</span>
-              <span class="subscribers">구독자 1.98천명</span>
+          <div class="channel__data">
+            <div class="metadata">
+              <img src="./img/elice_logo.jpg" alt="elice" />
+              <div class="metadata__info">
+                <span class="name">엘리스코딩 elice</span>
+                <span class="subscribers">구독자 1.98천명</span>
+              </div>
+            </div>
+            <div class="subscribe-btns">
+              <button type="button" id="subscribe" class="subscribe">
+                구독
+              </button>
+              <div class="alarm-btns hidden">
+                <button type="button" id="alarm-on" class="alarm">
+                  <i class="alerm-btn far fa-bell"></i>
+                </button>
+                <button type="button" id="alarm-off" class="alarm hidden">
+                  <i class="alerm-btn far fa-bell-slash"></i>
+                </button>
+              </div>
             </div>
           </div>
-          <button type="button" class="subscribe">구독</button>
+          <div class="channel__desc">
+            <span>
+              초보자도 가능한 실습형 코딩수업!<br />
+              언제나, 어디서나 코딩을 배우는 세상을 만들어 나갑니다.<br />
+            </span>
+          </div>
         </div>
       </section>
       <!-- //Channel Description -->
@@ -130,54 +150,7 @@
 
       <!-- Up Next section -->
       <section class="upNext">
-        <span class="title">Up next</span>
-        <ul>
-          <li class="item">
-            <div class="img">
-              <img src="./img/thumbnail1.jpg" alt="첫 번째 이야기" />
-            </div>
-            <div class="itemInfo">
-              <span class="title"
-                >코딩 부트캠프, 엘리스를 선택한 이유는? 첫 번째 이야기!</span
-              >
-              <span class="name">엘리스코딩 elice</span>
-              <span class="views">82k views</span>
-            </div>
-            <button type="button" class="moreBtn">
-              <i class="fas fa-ellipsis-v"></i>
-            </button>
-          </li>
-          <li class="item">
-            <div class="img">
-              <img src="./img/thumbnail2.jpg" alt="두 번째 이야기" />
-            </div>
-            <div class="itemInfo">
-              <span class="title"
-                >코딩 부트캠프, 엘리스를 선택한 이유는? 두 번째 이야기!</span
-              >
-              <span class="name">엘리스코딩 elice</span>
-              <span class="views">74k views</span>
-            </div>
-            <button type="button" class="moreBtn">
-              <i class="fas fa-ellipsis-v"></i>
-            </button>
-          </li>
-          <li class="item">
-            <div class="img">
-              <img src="./img/thumbnail3.jpg" alt="세 번째 이야기" />
-            </div>
-            <div class="itemInfo">
-              <span class="title"
-                >코딩 부트캠프, 엘리스를 선택한 이유는? 세 번째 이야기!</span
-              >
-              <span class="name">엘리스코딩 elice</span>
-              <span class="views">80k views</span>
-            </div>
-            <button type="button" class="moreBtn">
-              <i class="fas fa-ellipsis-v"></i>
-            </button>
-          </li>
-        </ul>
+        <!-- ContentsList -->
       </section>
       <!-- //Up Next section -->
     </div>
