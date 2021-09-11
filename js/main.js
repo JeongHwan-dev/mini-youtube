@@ -83,21 +83,21 @@ dislikeBtn.addEventListener('click', () => {
 const contentsData = [
   {
     title: '코딩 부트캠프, 엘리스를 선택한 이유는? 첫 번째 이야기!',
-    img: './img/thumbnail1.jpg',
+    img: 'thumbnail1.jpg',
     name: '엘리스코딩 elice',
     views: '10,376',
     date: '2019. 7. 15.',
   },
   {
     title: '코딩 부트캠프, 엘리스를 선택한 이유는? 두 번째 이야기!',
-    img: './img/thumbnail2.jpg',
+    img: 'thumbnail2.jpg',
     name: '엘리스코딩 elice',
     views: '3,419',
     date: '2019. 7. 15.',
   },
   {
     title: '코딩 부트캠프, 엘리스를 선택한 이유는? 세 번째 이야기!',
-    img: './img/thumbnail3.jpg',
+    img: 'thumbnail3.jpg',
     name: '엘리스코딩 elice',
     views: '3,419',
     date: '2019. 7. 16.',
@@ -114,7 +114,7 @@ for (let i = contentsData.length - 1; i >= 0; i--) {
   contentsList.push(`
     <li class="item">
       <div class="img">
-        <img src="${contentsData[i].img}" alt="${contentsData[i].title}" />
+        <img src="img/${contentsData[i].img}" alt="${contentsData[i].title}" />
       </div>
       <div class="item__info">
         <span class="title">
