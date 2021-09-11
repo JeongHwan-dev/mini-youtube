@@ -104,6 +104,7 @@ header .icons .fa-search {
   display: flex;
   font-size: var(--font-medium);
   color: var(--blue-color);
+  cursor: pointer;
 }
 .info .metadata .hashtags li {
   margin-right: var(--spacing);
@@ -191,6 +192,7 @@ header .icons .fa-search {
   height: var(--avatar-size);
   border-radius: 50%;
   margin-right: var(--spacing);
+  cursor: pointer;
 }
 .info .channel .channel__data .metadata .metadata__info {
   display: flex;
@@ -201,6 +203,7 @@ header .icons .fa-search {
   width: 100%;
   font-size: var(--font-medium);
   color: var(--black-deep-color);
+  cursor: pointer;
 }
 .info .channel .channel__data .metadata .metadata__info .subscribers {
   font-size: var(--font-small);
@@ -253,6 +256,7 @@ header .icons .fa-search {
 .upNext .item .img {
   flex-basis: 35%;
   margin-right: var(--spacing);
+  cursor: pointer;
 }
 .upNext .item .img img {
   width: 100%;
@@ -267,6 +271,10 @@ header .icons .fa-search {
   margin-bottom: var(--spacing-micro);
   font-size: var(--font-medium);
   color: var(--black-deep-color);
+  cursor: pointer;
+}
+.upNext .item .item__info .name {
+  cursor: pointer;
 }
 .upNext .item .item__info .name,
 .upNext .item .item__info .item__data {
