@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-  <img src="./img/youtube_logo.png" alt="YouTube" height="200px" />
+  <img src="./readme-assets/youtube_logo.png" alt="YouTube" height="200px" />
   <br />
   <h1>유튜브 (YouTube) with HTML&CSS</h1>
   <br />
