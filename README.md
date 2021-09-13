@@ -3,6 +3,9 @@
   <img src="./readme-assets/youtube_logo.png" alt="YouTube" height="200px" />
   <br />
   <h1>유튜브 (YouTube) with HTML&CSS</h1>
+  <a href="https://app.netlify.com/sites/compassionate-borg-80a3d6/deploys">
+    <img src="https://api.netlify.com/api/v1/badges/2defed1c-3cb2-4ed6-ad11-f345ba53b647/deploy-status" alt="netlify" />
+  </a>
   <br />
 </div>
 
@@ -25,7 +28,7 @@
 
 <br />
 
-[**🔗 배포된 웹 서비스로 바로가기 Click !**]() 👈
+[**🔗 배포된 웹 서비스로 바로가기 Click !**](https://compassionate-borg-80a3d6.netlify.app/) 👈
 
 > 새 창 열기 방법 : CTRL+click (on Windows and Linux) | CMD+click (on MacOS)
 
@@ -51,9 +54,13 @@
 
 ## 📄 주요 페이지
 
-|                   메인 페이지                   |
-| :---------------------------------------------: |
-| <img src="" alt="메인 페이지" width="1000px" /> |
+|                                 일반 웹 페이지                                  |
+| :-----------------------------------------------------------------------------: |
+| <img src="./readme-assets/web-page.gif" alt="일반 웹 페이지 " width="1000px" /> |
+
+|                                  모바일 웹 페이지                                   |
+| :---------------------------------------------------------------------------------: |
+| <img src="./readme-assets/mobile-page.gif" alt="모바일 웹 페이지" width="1000px" /> |
 
 <br />
 
@@ -70,7 +77,7 @@ $ git clone https://github.com/JeongHwan-dev/youtube-with-html-css.git
 2. **프로젝트 폴더로 이동**
 
 ```bash
-$ cd mini-youtube
+$ cd youtube-with-html-css
 ```
 
 3. **필요한 node_modules 설치**
